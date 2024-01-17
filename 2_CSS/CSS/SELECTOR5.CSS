@@ -3,15 +3,15 @@
     background-color: steelblue;
 }
 
-/*  :only-of-type */
+/* :only-of-type */
 #test2 > p:only-of-type {
     background-color: red;
 }
 
-/* :epty */
+/* :empty */
 #test3 > p:empty {
     background-color: greenyellow;
-    height : 30px;
+    height: 30px;
 }
 
 /* 여러 선택자 동시 선택 */
@@ -32,6 +32,6 @@
 }
 
 /* 클래스가 여러개인 요소만 선택 */
-.test.c6 {
+.test6.c6 {
     background-color: red;
 }

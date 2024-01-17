@@ -1,65 +1,59 @@
 <!DOCTYPE html>
-<html lang="KO">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05_CSS선택자5</title>
 
-
-    <LINK REL="STYLESHEET" HREF="CSS/SELECTOR5.CSS">
-
+    <link rel="stylesheet" href="css/selector5.css">
 </head>
 <body>
-    <h1> 기타 선택자</h1>
+    <h1>기타 선택자</h1>
 
- <h3>:only-child</h3>
- <pre>
-    특정 요소의 자식이 하나밖에 없을 때 선택
- </pre>
+    <h3>:only-child</h3>
+    <pre>
+        특정 요소의 자식이 하나밖에 없을 때 선택
+    </pre>
 
- <div id="test1">
-    <p>자식1</p>
-    <!-- <p>자식1</p>-->
- </div>
-
-<hr>
-
-<h3>:only-of-thpe</h3>
-<pre>
-    특정 요소의 자식 중
-    지정된 형태와 같은 자식 요소가 하나만 있을 때 선택
-</pre>
-
-<div id="test2">
-    <p>자식1</p>
-    <pre>자식2</pre>
-    <!-- <p>자식2</p>-->
-</div>
+    <div id="test1">
+        <p>자식1</p>
+        <!-- <p>자식1</p> -->
+    </div>
 
 
-<hr>
+    <hr>
 
-<h3>:empty</h3>
-<pre>
-    자식 요소가 없는 요소를 선택
+    <h3>:only-of-type</h3>
+    <pre>
+        특정 요소의 자식 중
+        지정된 형태와 같은 자식 요소가 하나만 있을 때 선택
+    </pre>
 
-    -자식 요소 개념
-    태그, 글자, 띄어쓰기 모두 자식 요소라고 함.
-</pre>
-
-<div id="test3">
-    <p></p>
-    <p>123</p>
-    <p>            </p>
-    <p><strong>하이</strong></p>
-</div>
+    <div id="test2">
+        <p>자식1</p>
+        <pre>자식2</pre>
+        <!-- <p>자식2</p> -->
+    </div>
 
 
+    <hr>
 
+    <h3>:empty</h3>
+    <pre>
+        자식 요소가 없는 요소를 선택
 
+        - 자식 요소 개념
+        태그, 글자, 띄어쓰기 모두 자식 요소라고 함.
+    </pre>
 
-<hr>
+    <div id="test3">
+        <p></p>
+        <p>123</p>
+        <p>        </p>
+        <p><strong>하이</strong></p>
+    </div>
 
+    <hr>
 
     <h3>여러 선택자 동시 선택</h3>
     <pre>
@@ -76,13 +70,9 @@
     <div class="test4-3">테스트3</div>
 
 
-
-
     <hr>
 
-
     <h3>특정 요소 내부에 있는 특정 클래스만 선택하기</h3>
-
 
     <ul id="test5-1">
         <li class="c5">1</li>
@@ -91,7 +81,6 @@
         <li>4</li>
         <li>5</li>
     </ul>
-
 
     <ul id="test5-2">
         <li class="c5">6</li>
@@ -121,14 +110,6 @@
     <div class="test6">테스트</div>
     <div class="test6 c6">테스트</div>
     <div class="c6">테스트</div>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
