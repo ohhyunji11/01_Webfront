@@ -126,8 +126,8 @@ function check() {
     // -> 다른 연산보다 먼저 수행
     // -> count 값이 먼저 증가, 감소된 후 console에 출력
 
-    console.log("++count : " , ++count);
-    console.log("++count : " , ++count);
+    console.log("++count : " , ++count); // 101
+    console.log("++count : " , ++count); // 102
     console.log("++count : " , ++count);
     console.log("--count : " , --count);
     console.log("--count : " , --count);
