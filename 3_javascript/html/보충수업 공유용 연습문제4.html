@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>짝수홀수구하기</h1>
-        <input type="number" id="numberInput">
-        <button id="btn">click</button>
-    
-        <script>
-        </script>
-    </body>
-    </html>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="number" id="numberInput">
+    <button id="btn">click</button>
+    <script>
+        
+        function checkFn(num) {
+            if(num % 2 == 0) {
+                alert("짝수");
+            }else {
+                alert("홀수");
+            }
+        }
+        
+        
+        document.querySelector("#btn").addEventListener("click", () => {
+            
+            const number = document.querySelector("#numberInput").value;
+            checkFn(Number(number));
+            
+
+        });
+
+       
+      </script>
 </body>
 </html>

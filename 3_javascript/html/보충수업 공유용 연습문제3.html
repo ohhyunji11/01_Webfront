@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
     <style>
         div, span {
@@ -30,9 +22,17 @@
     <section id="result"></section>
 
     <script>
+        const tag = document.querySelector("#tagName");
+        const tagInnerText = document.querySelector("#tagInnerText");
+        const colorName = document.querySelector("#colorName");
+
+        document.querySelector("#btn").addEventListener("click", () => {
+            const createTag = document.createElement(tag.value);
+            createTag.innerText = tagInnerText.value;
+            createTag.style.color = colorName.value;
+
+            result.append(createTag);
+        });
     </script>
 </body>
 </html>
-</body>
-</html>
-
